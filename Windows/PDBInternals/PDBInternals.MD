@@ -6,20 +6,14 @@ There is some documentation available (LLVM) and a source code dump by Microsoft
 
 It is worth noting that the [LLVM](https://llvm.org/docs/PDB/index.html) documentation and the [Microsoft PDB Repo](https://github.com/microsoft/microsoft-pdb) are really valuable resources to look through. Where I can/remember I'll link to the source code files in the [Microsoft PDB Repo](https://github.com/microsoft/microsoft-pdb) for clarity.
 
-## Goals
-The initial goals of the parser were to:
-* Extract function/symbol names at all offsets
-* Allow me to extract type information
-* Be relatively performant
 
+## PDB File Format
+The first thing to understand about the PDB file is made up of various streams of data and they are all stored within a MSF (Multistream File). The index of each stream is akin to a filename and the first few indexes have special meanings and the rest are indexed from content of other streams.
 
-## PDB Internals
-The first concept in a PDB is the Multistream File (MSF) which is defined in [msf.cpp](https://github.com/microsoft/microsoft-pdb/blob/master/PDB/msf/msf.cpp). 
-
-CARRY ON HERE.
-
+* [Multistream File Details](MultipleStreamFormat.MD)
 
 ### Multistream Fie (MSF)
+
 
 
 
