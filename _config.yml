@@ -1,1 +1,5 @@
-theme: jekyll-theme-cayman
+remote_theme: pmarsceill/just-the-docs
+color_scheme: dark
+title: REVR Articles
+description: Reverse Engineering and Vulnerability Research Articles
+url: "https://revrtools.github.io" 
